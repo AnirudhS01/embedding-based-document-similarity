@@ -1,0 +1,9 @@
+services:
+  backend:
+    image: embedding-image
+    build: .
+    container_name: python-embedding-container
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
